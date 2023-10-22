@@ -24,5 +24,12 @@ int main(){
     month = retirementyear * 12;
 
     ajdustinflationRetrunRate = ((1 + annualReturn)/(1 + annualInflation)) - 1;
-    printf("|month|\t|Interest  |\t|Balance   |\n"); 
+    printf("|month|\t|Interest  |\t|Balance   |\n");
+
+    for(int i = 1; i<=month; i++){
+        interest = (ajdustinflationRetrunRate * intilaAmount)/12;
+        intilaAmount += interest + mothlycontributionAmount;
+         totalInterestEarned = totalInterestEarned + interest;
+         printf("%5i\t$ %10.2f\t & %10.2f  \n",i,interest,intilaAmount);
+    } 
 }
