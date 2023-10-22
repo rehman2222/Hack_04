@@ -21,5 +21,7 @@ int main(){
     printf("Enter a number of year until retirment: ");
     scanf("%i",&retirementyear);
 
-    
+    month = retirementyear * 12;
+
+     
 }
