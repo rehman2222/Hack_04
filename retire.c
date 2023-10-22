@@ -32,4 +32,9 @@ int main(){
          totalInterestEarned = totalInterestEarned + interest;
          printf("%5i\t$ %10.2f\t & %10.2f  \n",i,interest,intilaAmount);
     } 
+    printf("---------------------\n");
+    printf("Total interest Earned = $ %f\n",totalInterestEarned);
+    printf("Total nest Egg: $ %f\n",intilaAmount);
+
+    return 0;
 }
