@@ -23,5 +23,6 @@ int main(){
 
     month = retirementyear * 12;
 
-     
+    ajdustinflationRetrunRate = ((1 + annualReturn)/(1 + annualInflation)) - 1;
+    printf("|month|\t|Interest  |\t|Balance   |\n"); 
 }
